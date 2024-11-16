@@ -1,0 +1,17 @@
+body {
+    font-family: 'Courier New', monospace; 
+}
+
+.btn-primary {
+    background-color: black;
+    border-color: bisque;
+    border-radius: 0;
+    margin-right: 10px !important;
+}
+
+#nav.active {
+    background-color: black !important;
+}
+.nav-link{
+    color:  black !important;
+}
