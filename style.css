@@ -3,7 +3,8 @@
     --primary-color: #FF4500;
     --secondary-color: #333;
     --background-color: #f9f9f9;
-    --text-color: #000;
+    --text-color: #000; /* Black text */
+    --footer-background: rgba(0, 0, 0, 0); /* Transparent footer */
     --font-family: 'Roboto', sans-serif;
 }
 
@@ -13,12 +14,12 @@ body {
     background-color: var(--background-color);
     margin: 0;
     padding: 0;
-    color: var(--text-color);
+    color: var(--text-color); /* Black text for the entire page */
 }
 
 a {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--text-color); /* Links will also have black color */
 }
 
 /* Navbar Styles */
@@ -56,9 +57,10 @@ a {
     transform: scale(1.05);
 }
 
+/* Footer Styles (Transparent) */
 footer {
-    background-color: var(--footer-background);
-    color: var(--text-color); 
+    background-color: var(--footer-background); /* Transparent background */
+    color: var(--text-color); /* Black text color */
     text-align: center;
     padding: 20px 0;
     margin-top: 20px;
