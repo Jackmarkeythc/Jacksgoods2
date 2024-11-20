@@ -58,8 +58,8 @@ a {
 
 /* Footer */
 footer {
-    background-color: var(--secondary-color);
-    color: white;
+    background-color: transparent;
+    color: Black;
     text-align: center;
     padding: 20px 0;
     margin-top: 20px;
