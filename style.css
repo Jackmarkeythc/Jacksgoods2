@@ -43,7 +43,7 @@ a {
 }
 
 .btn-primary {
-    background-color: Black(--primary-color);
+    background-color: Black;
     border: none;
     border-radius: 5px;
     color: white;
