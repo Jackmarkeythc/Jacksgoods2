@@ -33,10 +33,6 @@ a {
     font-weight: 500;
 }
 
-.nav-link:hover {
-    color: black !important;
-}
-
 .nav-link.active {
     color: black !important;
     font-weight: bold;
