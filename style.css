@@ -34,7 +34,7 @@ a {
 }
 
 .nav-link:hover {
-    color: white !important;
+    color: Black !important;
 }
 
 .nav-link.active {
@@ -47,7 +47,7 @@ a {
     background-color: black;
     border: none;
     border-radius: 5px;
-    color: white;
+    color: black;
     padding: 10px 20px;
     transition: all 0.3s ease-in-out;
 }
