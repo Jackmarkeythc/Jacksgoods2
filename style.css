@@ -24,7 +24,7 @@ a {
 
 /* Navbar Styles */
 .navbar {
-    background-color: black !important;
+    background-color: var(--secondary-color);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -43,7 +43,7 @@ a {
 }
 
 .btn-primary {
-    background-color: black !important;
+    background-color: var(--primary-color);
     border: none;
     border-radius: 5px;
     color: white;
