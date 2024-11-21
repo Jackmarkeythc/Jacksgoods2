@@ -29,7 +29,7 @@ a {
 }
 
 .navbar-brand, .nav-link {
-    color: black !important;
+    color: white !important;
     font-weight: 500;
 }
 
@@ -43,7 +43,7 @@ a {
 }
 
 .btn-primary {
-    background-color: var(--primary-color);
+    background-color: Black(--primary-color);
     border: none;
     border-radius: 5px;
     color: white;
