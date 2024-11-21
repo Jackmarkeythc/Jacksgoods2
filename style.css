@@ -24,7 +24,7 @@ a {
 
 /* Navbar Styles */
 .navbar {
-    background-color: var(--secondary-color);
+    background-color: black !important;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -34,7 +34,7 @@ a {
 }
 
 .nav-link:hover {
-    color: Black !important;
+    color: black !important;
 }
 
 .nav-link.active {
@@ -43,7 +43,7 @@ a {
 }
 
 .btn-primary {
-    background-color: Black;
+    background-color: black !important;
     border: none;
     border-radius: 5px;
     color: white;
