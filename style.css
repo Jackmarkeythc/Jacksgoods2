@@ -18,12 +18,12 @@
 /* Global Styles */
 body {
     font-family: 'jmh_typewriterblack';
-    background-image: url('35.jpeg'); /* Ensure the correct relative path */
+    background-image: url('35.jpeg'); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed; /* Keeps the image static during scrolling */
-    color: var(--text-color); /* Text color is white for better readability */
+    background-attachment: fixed; 
+    color: var(--text-color); 
     margin: 0;
     padding: 0;
 }
@@ -86,6 +86,11 @@ footer .social-icons {
 .hero {
     background: linear-gradient rgba(0, 0, 0, 0) no-repeat center center;
     background-size: cover;
+    background-image: url('35.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; 
     color: 0;
     text-align: center;
     padding: 100px 20px;
