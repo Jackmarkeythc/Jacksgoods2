@@ -55,7 +55,7 @@ a {
     background-color: Black;
     border: none;
     border-radius: 5px;
-    color: white;
+    color: 0;
     padding: 10px 20px;
     transition: all 0.3s ease-in-out;
 }
