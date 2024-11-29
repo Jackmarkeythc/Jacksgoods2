@@ -13,6 +13,7 @@
     --text-color: #000; /* Black text */
     --footer-background: rgba(0, 0, 0, 0); /* Transparent footer */
     --font-family: jmh_typewriterblack;
+    --background-image: url('607.jpeg');
 }
 
 /* Global Styles */
