@@ -94,11 +94,20 @@ footer .social-icons {
 
 /* Hero Section */
 .hero {
-    background:rgba(0, 0, 0, 0);
+    background-image: url('607.jpeg'); /* Replace with the correct path */
     background-size: cover;
-    color: 0;
+    background-repeat: no-repeat;
+    background-position: center;
     text-align: center;
+    color: white; /* Adjust for better visibility */
+    padding: 100px 20px;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* For additional overlay if needed */
 }
+
 
 .hero h1 {
     font-size: 3rem;
