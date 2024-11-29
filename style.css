@@ -1,17 +1,19 @@
+/* Font Face for jmh_typewriterblack */
 @font-face {
   font-family: 'jmh_typewriterblack';
   src: url('fonts/jmh_typewriter-black-webfont.woff') format('woff'),
        url('fonts/jmh_typewriter-black-webfont.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
-  }
+}
+
 /* Root Variables */
 :root {
     --primary-color: #000;
     --secondary-color: #333;
     --background-color: rgba(0, 0, 0, 0);
-    --text-color: #000; /* Black text */
-    --footer-background: rgba(0, 0, 0, 0); /* Transparent footer */
+    --text-color: #000;
+    --footer-background: rgba(0, 0, 0, 0);
     --font-family: jmh_typewriterblack;
     --background-image: url('607.jpeg');
 }
@@ -24,18 +26,28 @@ body {
     padding: 0;
     color: var(--text-color);
     background-image: url('607.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: cover; /* Ensures full cover */
     background-position: center;
-    background-attachment: fixed; /* Optional, makes the background fixed */
+    background-attachment: fixed;
     content: "";
-    position: relative; /* Add this if it's not already */
+    position: relative;
     height: 100vh;
 }
 
-a {
-    text-decoration: none;
-    color: var(--text-color); /* Links will also have black color */
+/* Adjust background for small screens */
+@media (max-width: 768px) {
+    body {
+        background-size: auto; /* Adjust the size for small screens */
+        background-position: center center; /* Keep the background centered */
+    }
+
+    .hero h1 {
+        font-size: 2rem; /* Adjust heading font size for smaller devices */
+    }
+
+    .hero p {
+        font-size: 1rem; /* Adjust paragraph font size for smaller devices */
+    }
 }
 
 /* Navbar Styles */
@@ -67,17 +79,11 @@ a {
     background-color: #e03e00;
     transform: scale(1.05);
 }
-.bg-light p-5{
-    Background:rgba(0, 0, 0, 0);
-    text-align: center!important;
-    padding: 3rem!important;
-    display: block;
-}
 
-/* Footer Styles (Transparent) */
+/* Footer Styles */
 footer {
     text-align: center;
-    padding: 20px 0; /* Adjust padding to control height */
+    padding: 20px 0;
     margin-top: 20px;
 }
 
@@ -91,8 +97,6 @@ footer .social-icons {
     color: white;
     transition: color 0.3s ease;
 }
-
-
 
 /* Content Sections */
 .section {
@@ -124,7 +128,6 @@ footer .social-icons {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
-
 
 .card-img-top {
     height: 200px;
@@ -162,15 +165,23 @@ form button:hover {
     background-color: #e03e00;
 }
 
-/* Responsive */
+/* Responsive Adjustments for Small Screens */
 @media (max-width: 768px) {
-    .hero h1 {
+    body {
+        background-size: auto; /* Adjust background size for mobile */
+        background-position: center center;
+        height: auto;
+    }
+
+    .hero-section h1 {
         font-size: 2rem;
     }
 
-    .hero p {
+    .hero-section p {
         font-size: 1rem;
     }
-     body {
-        background-size: auto; /* Adjust size for smaller screens */
+
+    .section h2 {
+        font-size: 1.5rem;
     }
+}
