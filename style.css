@@ -94,11 +94,10 @@ footer .social-icons {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient rgba(0, 0, 0, 0) no-repeat center center;
+    background:rgba(0, 0, 0, 0);
     background-size: cover;
     color: 0;
     text-align: center;
-    padding: 100px 20px;
 }
 
 .hero h1 {
