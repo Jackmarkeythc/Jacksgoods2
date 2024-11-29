@@ -26,19 +26,22 @@ body {
     padding: 0;
     color: var(--text-color);
     background-image: url('607.jpeg');
-    background-size: cover; /* Ensures full cover */
-    background-position: center;
-    background-attachment: fixed;
+    background-size: cover; /* Ensure the background covers the screen */
+    background-position: center center; /* Keeps the background centered */
+    background-attachment: fixed; /* Keep the background fixed for larger screens */
     content: "";
     position: relative;
-    height: 100vh;
+    height: 100vh; /* Full viewport height */
+    width: 100%;
 }
 
 /* Adjust background for small screens */
 @media (max-width: 768px) {
     body {
-        background-size: auto; /* Adjust the size for small screens */
+        background-size: auto; /* Adjust the size for smaller screens */
         background-position: center center; /* Keep the background centered */
+        background-attachment: scroll; /* Disable fixed background for mobile devices */
+        height: auto; /* Adjust height for mobile devices */
     }
 
     .hero h1 {
@@ -70,7 +73,6 @@ body {
     background-color: Black;
     border: none;
     border-radius: 5px;
-    color: 0;
     padding: 10px 20px;
     transition: all 0.3s ease-in-out;
 }
@@ -173,11 +175,11 @@ form button:hover {
         height: auto;
     }
 
-    .hero-section h1 {
+    .hero h1 {
         font-size: 2rem;
     }
 
-    .hero-section p {
+    .hero p {
         font-size: 1rem;
     }
 
