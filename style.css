@@ -22,7 +22,13 @@ body {
     margin: 0;
     padding: 0;
     color: var(--text-color); /* Black text for the entire page */
+    background-image: url('35.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
+
 
 a {
     text-decoration: none;
