@@ -69,18 +69,25 @@ body {
     font-weight: bold;
 }
 
+/* Button Style */
 .btn-primary {
-    background-color: Black;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    transition: all 0.3s ease-in-out;
+    background-color: #006400; /* Dark green background */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Adjust padding */
+    color: white; /* White text color */
+    font-size: 1rem; /* Adjust font size */
+    font-weight: bold;
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
 }
 
+/* Button Hover Effect */
 .btn-primary:hover {
-    background-color: #e03e00;
-    transform: scale(1.05);
+    background-color: #004d00; /* Slightly darker green on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+    color: #ffffff; /* Ensure text stays white */
 }
+
 
 /* Footer Styles */
 footer {
