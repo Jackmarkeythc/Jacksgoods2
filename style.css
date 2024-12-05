@@ -167,54 +167,57 @@ form button:hover {
     background-color: #e03e00;
 }
 
-/* Responsive Adjustments for Small Screens */
-@media (max-width: 768px) {
-    body {
-        background-size: auto; /* Adjust background size for mobile */
-        background-position: center center;
-        height: auto;
-    }
-
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-
-    .section h2 {
-        font-size: 1.5rem;
-    }
-}
-/* Sticky Bottom Navigation */
+/* Sticky Bottom Navigation Bar */
 #nav {
-    background-color: #006400; /* Dark green */
-    position: fixed;
+    background-color: #006400; /* Dark green background */
+    position: fixed; /* Fixed to the bottom of the viewport */
     bottom: 0;
     left: 0;
     width: 100%;
-    z-index: 1030; /* Ensure it's above other elements */
-    padding: 10px 0;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for styling */
+    z-index: 1030; /* Ensures it's on top of other elements */
+    padding: 10px 0; /* Space inside the nav */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for styling */
 }
 
+/* Navigation links */
 #nav .nav-link {
-    color: white !important; /* Text color for navigation links */
-    font-size: 1rem;
+    color: white !important; /* Text color */
+    font-size: 1.2rem; /* Slightly larger font size for readability */
     font-weight: bold;
-    padding: 10px;
-}
-
-#nav .nav-link.active {
-    color: #FFD700 !important; /* Highlight active link in gold */
-}
-
-#nav .nav-link i {
-    font-size: 1.5rem;
-}
-
-#nav .nav-item {
-    flex: 1; /* Ensure equal spacing */
     text-align: center;
+    padding: 10px; /* Space around each link */
+    transition: color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+}
+
+/* Active link style */
+#nav .nav-link.active {
+    color: #FFD700 !important; /* Gold for the active page */
+}
+
+/* Icons within the links */
+#nav .nav-link i {
+    font-size: 1.5rem; /* Larger size for icons */
+    display: block; /* Ensures icons are centered vertically */
+}
+
+/* Ensure nav items have equal spacing */
+#nav .nav-item {
+    flex: 1; /* Distributes space evenly */
+    text-align: center; /* Centers content */
+}
+
+/* Hover effect for links */
+#nav .nav-link:hover {
+    color: #00FF00 !important; /* Bright green on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #nav .nav-link {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+    #nav .nav-link i {
+        font-size: 1.2rem; /* Adjust icon size for smaller screens */
+    }
 }
