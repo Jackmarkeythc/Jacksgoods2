@@ -52,33 +52,6 @@ body {
         font-size: 1rem; /* Adjust paragraph font size for smaller devices */
     }
 }
-/* Sticky Bottom Navigation: Dark Green Adjustment */
-#nav .nav-item {
-    background-color: #006400; /* Dark green background */
-    color: white; /* White text color */
-    border-radius: 8px; /* Optional: Rounded corners for styling */
-    margin: 5px; /* Space between items */
-    text-align: center; /* Center-align content */
-    padding: 10px; /* Padding inside each item */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
-}
-
-/* Hover effect for nav-item */
-#nav .nav-item:hover {
-    background-color: #004d00; /* Darker green on hover */
-    transform: scale(1.05); /* Slight zoom effect */
-    color: #ffffff; /* Ensure text stays white */
-}
-#nav.navbar-brand, .nav-link {
-    color: #006400 !important;
-    font-weight: 500;
-}
-
-#nav.nav-link.active {
-    color: #006400 !important;
-    font-weight: bold;
-}
-
 
 /* Navbar Styles */
 .navbar {
