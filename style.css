@@ -68,6 +68,22 @@ body {
     color: black !important;
     font-weight: bold;
 }
+/* Active Navigation Link: Dark Green Color */
+#nav .nav-link.active {
+    background-color: #006400; /* Dark green background */
+    color: white; /* White text color for contrast */
+    font-weight: bold; /* Emphasize the active link */
+    border-radius: 8px; /* Optional: Rounded corners */
+    padding: 8px 12px; /* Padding inside the active link */
+    text-align: center; /* Center align the text */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+/* Optional: Hover effect for active link */
+#nav .nav-link.active:hover {
+    background-color: #004d00; /* Darker green on hover */
+    color: #ffffff; /* Ensure text stays white */
+}
 
 .btn-primary {
     background-color: Black;
