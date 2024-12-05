@@ -13,135 +13,92 @@
     --secondary-color: #333;
     --background-color: rgba(0, 0, 0, 0);
     --text-color: #000;
-    --footer-background: #333;
+    --footer-background: rgba(0, 0, 0, 0);
     --font-family: jmh_typewriterblack;
     --background-image: url('607.jpeg');
-    --highlight-color: #e03e00;
 }
 
 /* Global Styles */
 body {
-    font-family: var(--font-family);
+    font-family: jmh_typewriterblack;
     background-color: var(--background-color);
     margin: 0;
     padding: 0;
     color: var(--text-color);
-    background-image: var(--background-image);
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    height: 100vh;
+    background-image: url('607.jpeg');
+    background-size: cover; /* Ensure the background covers the screen */
+    background-position: center center; /* Keeps the background centered */
+    background-attachment: fixed; /* Keep the background fixed for larger screens */
+    content: "";
+    position: relative;
+    height: 100vh; /* Full viewport height */
     width: 100%;
-}
-
-/* Smooth Scrolling */
-html {
-    scroll-behavior: smooth;
 }
 
 /* Adjust background for small screens */
 @media (max-width: 768px) {
     body {
-        background-size: auto;
-        background-position: center center;
-        background-attachment: scroll;
-        height: auto;
+        background-size: auto; /* Adjust the size for smaller screens */
+        background-position: center center; /* Keep the background centered */
+        background-attachment: scroll; /* Disable fixed background for mobile devices */
+        height: auto; /* Adjust height for mobile devices */
+    }
+
+    .hero h1 {
+        font-size: 2rem; /* Adjust heading font size for smaller devices */
+    }
+
+    .hero p {
+        font-size: 1rem; /* Adjust paragraph font size for smaller devices */
     }
 }
 
 /* Navbar Styles */
 .navbar {
-    background-color: var(--primary-color);
+    background-color: black;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-brand {
-    color: #fff !important;
-    font-size: 1.5rem;
-}
-
-.nav-link {
-    color: #ddd !important;
+.navbar-brand, .nav-link {
+    color: Black !important;
     font-weight: 500;
 }
 
 .nav-link.active {
-    color: var(--highlight-color) !important;
+    color: black !important;
     font-weight: bold;
 }
 
-.nav-link:hover {
-    color: #fff !important;
-}
-
-.navbar-toggler {
-    border-color: #fff;
-}
-
-/* Sticky Bottom Navigation */
-#nav {
-    background-color: var(--primary-color);
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-    padding: 10px 0;
-}
-
-.nav-pills .nav-link {
-    color: #ddd !important;
-    font-size: 1.2rem;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.nav-pills .nav-link.active {
-    color: var(--highlight-color) !important;
-    transform: scale(1.1);
-}
-
-.nav-pills .nav-link:hover {
-    color: #fff !important;
-    transform: scale(1.05);
-}
-
-/* Buttons */
 .btn-primary {
-    background-color: var(--primary-color);
+    background-color: Black;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
     transition: all 0.3s ease-in-out;
-    color: #fff;
 }
 
 .btn-primary:hover {
-    background-color: var(--highlight-color);
+    background-color: #e03e00;
     transform: scale(1.05);
-}
-
-.btn-primary:focus {
-    outline: 3px solid var(--highlight-color);
-    outline-offset: 2px;
 }
 
 /* Footer Styles */
 footer {
-    background-color: transparent;
-    color: #fff; 
     text-align: center;
     padding: 20px 0;
     margin-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.3); 
 }
 
-footer .social-icons a {
+footer .social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
     margin: 0 15px;
     font-size: 30px;
-    color: #fff;
+    color: white;
     transition: color 0.3s ease;
 }
-
-footer .social-icons a:hover {
-    color: var(--highlight-color); 
-}
-
 
 /* Content Sections */
 .section {
@@ -169,8 +126,9 @@ footer .social-icons a:hover {
 }
 
 .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card-img-top {
@@ -195,7 +153,7 @@ form input, form textarea {
 
 form button {
     width: 100%;
-    background-color: var(--primary-color);
+    background-color: 0;
     border: none;
     color: white;
     font-size: 1rem;
@@ -206,11 +164,17 @@ form button {
 }
 
 form button:hover {
-    background-color: var(--highlight-color);
+    background-color: #e03e00;
 }
 
 /* Responsive Adjustments for Small Screens */
 @media (max-width: 768px) {
+    body {
+        background-size: auto; /* Adjust background size for mobile */
+        background-position: center center;
+        height: auto;
+    }
+
     .hero h1 {
         font-size: 2rem;
     }
