@@ -69,6 +69,15 @@ body {
     transform: scale(1.05); /* Slight zoom effect */
     color: #ffffff; /* Ensure text stays white */
 }
+#nav.navbar-brand, .nav-link {
+    color: #006400 !important;
+    font-weight: 500;
+}
+
+#nav.nav-link.active {
+    color: #006400 !important;
+    font-weight: bold;
+}
 
 
 /* Navbar Styles */
