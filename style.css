@@ -23,7 +23,7 @@ body {
     font-family: jmh_typewriterblack;
     background-color: var(--background-color);
     margin: 0;
-    padding: 0;
+    padding-bottom: 60px; 
     color: var(--text-color);
     background-image: url('607.jpeg');
     background-size: cover; /* Ensure the background covers the screen */
@@ -186,4 +186,35 @@ form button:hover {
     .section h2 {
         font-size: 1.5rem;
     }
+}
+/* Sticky Bottom Navigation */
+#nav {
+    background-color: #006400; /* Dark green */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030; /* Ensure it's above other elements */
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for styling */
+}
+
+#nav .nav-link {
+    color: white !important; /* Text color for navigation links */
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#nav .nav-link.active {
+    color: #FFD700 !important; /* Highlight active link in gold */
+}
+
+#nav .nav-link i {
+    font-size: 1.5rem;
+}
+
+#nav .nav-item {
+    flex: 1; /* Ensure equal spacing */
+    text-align: center;
 }
