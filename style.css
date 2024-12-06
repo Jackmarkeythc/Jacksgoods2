@@ -34,6 +34,10 @@ body {
     height: 100vh; /* Full viewport height */
     width: 100%;
 }
+.logo-img {
+    width: 120px; /* Set the width to match your desired size */
+    height: auto; /* Maintain the aspect ratio */
+}
 
 /* Adjust background for small screens */
 @media (max-width: 768px) {
