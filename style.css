@@ -182,12 +182,13 @@ html, body {
 }
 
 .footer {
-    background-color: #f8f9fa; /* Adjust background color as needed */
-    padding: 20px;
     text-align: center;
     position: relative;
     width: 100%;
     bottom: 0;
+    background: linear-gradient(135deg, #333, #444); /* Gradient from dark grey to a slightly lighter grey */
+    color: white;
+    padding: 20px 0;
 }
 
 .social-icons {
