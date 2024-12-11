@@ -31,16 +31,16 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="item.html">Items</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="about.html">About</a>
+                            <a class="nav-link" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="contact.html">Contact</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -67,7 +67,7 @@
                         <div class="row">
                             <div class="col-md-4 col-sm-12">
                                 <div class="card">
-                                    <img src="1.png" class="card-img-top" alt="Fender Guitar">
+                                    <img src="1.png" class="card-img-top" alt="Fender Stratocaster Guitar">
                                     <div class="card-body">
                                         <h5 class="card-title">Fender Stratocaster</h5>
                                         <p class="card-text">Fender Custom Shop 56 Stratocaster in Black.</p>
@@ -91,7 +91,7 @@
                         <div class="row">
                             <div class="col-md-4 col-sm-12">
                                 <div class="card">
-                                    <img src="8.png" class="card-img-top" alt="Gibson Guitar">
+                                    <img src="8.png" class="card-img-top" alt="Gibson SG Guitar">
                                     <div class="card-body">
                                         <h5 class="card-title">Gibson SG</h5>
                                         <p class="card-text">Gibson Custom Shop EDS-1275 Double Neck - Cherry.</p>
@@ -115,7 +115,7 @@
                         <div class="row">
                             <div class="col-md-4 col-sm-12">
                                 <div class="card">
-                                    <img src="80.jpg" class="card-img-top" alt="Gear Image">
+                                    <img src="80.jpg" class="card-img-top" alt="Guitar Gear">
                                     <div class="card-body">
                                         <h5 class="card-title">Guitar Gear</h5>
                                         <p class="card-text">Various accessories and equipment for guitars.</p>
@@ -155,6 +155,18 @@
 
     </div> <!-- End of container -->
 
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Jacksgoods. All rights reserved.</p>
+            <ul class="list-unstyled d-flex justify-content-center">
+                <li><a href="#" class="text-white mx-2">Privacy Policy</a></li>
+                <li><a href="#" class="text-white mx-2">Terms of Service</a></li>
+                <li><a href="contact.html" class="text-white mx-2">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
     <!-- Modal Placeholders -->
     <div class="modal fade" id="itemModal1" tabindex="-1" aria-labelledby="itemModal1Label" aria-hidden="true">
         <div class="modal-dialog">
@@ -174,61 +186,9 @@
         </div>
     </div>
 
-    <div class="modal fade" id="itemModal2" tabindex="-1" aria-labelledby="itemModal2Label" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="itemModal2Label">Gibson SG</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="8.png" class="img-fluid" alt="Gibson Guitar">
-                    <p>The Gibson EDS-1275 Double Neck is an iconic design with specs like a Cherry Red finish, solid mahogany body, slim C-shape necks, and Indian rosewood fingerboards, offering both style and performance.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="itemModal3" tabindex="-1" aria-labelledby="itemModal3Label" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="itemModal3Label">Guitar Gear</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="80.jpg" class="img-fluid" alt="Guitar Gear">
-                    <p>Find all your guitar gear needs here, from pedals and tuners to amps and cables.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="itemModal4" tabindex="-1" aria-labelledby="itemModal4Label" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="itemModal4Label">Guitar Accessories</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="80.jpg" class="img-fluid" alt="Guitar Accessories">
-                    <p>Explore our collection of guitar accessories for better performance and maintenance.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <!-- Modal Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
+
